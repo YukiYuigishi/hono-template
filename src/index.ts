@@ -1,7 +1,9 @@
-import Test from "./test";
+import { Hono } from "hono";
 
-const App = () => {
-   Test();
-};
+const app = new Hono();
 
-App();
+app.get("/", (c) => c.text("test"));
+
+app.get("/api", (c) => c.json({ message: "Hello World" }));
+
+app.fire();

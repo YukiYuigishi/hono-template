@@ -20,8 +20,10 @@
       "error",
       "double"
     ],
-    "no-console": "off",
+    "no-console": "off"
+    /*,
     "import/no-unresolved": "off",
     "import/extensions": "off"
+    */
   }
 }
